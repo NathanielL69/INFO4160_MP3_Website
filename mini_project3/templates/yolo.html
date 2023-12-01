@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h2>Mini Project 3</h2>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="item-2">
+            <p>
+                Please upload your image to be processed with the Yolo v8 Model.
+            </p>
+            <form method="post" action="/yolo" enctype="multipart/form-data">
+                <dl>
+                    <input type="file" name="file" required>
+                </dl>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+        {% if filename %}
+        <div class="item-2">
+            <img src="{{ url_for('display_img', filename=filename) }}">
+        </div>
+        {% endif %}
+        <div class="item-2">
+            <form action="/yolo" method="post">
+                <input type='submit' name='home_button' value='Return to Home'>
+            </form>
+        </div>
+    </div>
+    <footer>
+        INFO4160
+    </footer>
+</body>
+
+</html>

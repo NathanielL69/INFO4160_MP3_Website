@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h2>Mini Project 3</h2>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="item-2">
+            <p>Select which model you wish to process your image with.</p>
+        </div>
+        <div class="item-2">
+            <form action="/yolo" method="post">
+                <input type='submit' name='yolo_button' value='Yolo Model'>
+            </form>
+            <p>
+                The YoloV8 model will take in your image, and post your processed image with boxes around the detected persons/objects.
+            </p>
+            <br>
+
+            <form action="/ViT" method="post">
+                <input type='submit' name='ViT_button' value='ViT Model'>
+            </form>
+            <p>
+                The Vision Transformer model will take in your image, and return the key features found as text.
+            </p>
+        </div>
+    </div>
+    <footer>
+        INFO4160
+    </footer>
+</body>
+
+</html>

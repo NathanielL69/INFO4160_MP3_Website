@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(215, 255, 159);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    padding: 5px;
+    background-color: rgb(24, 93, 25);
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 5px;
+    /* border-style: solid;
+    border-color: white;
+    background-color: white; */
+}
+
+.item-1 {
+    padding: 5px;
+    border-style: double;
+    border-color: black;
+    text-align: center;
+    background-color: rgb(112, 87, 158);
+}
+
+.item-2 {
+    padding: 5px;
+    background-color: rgb(43, 81, 72);
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    margin-left: 10px;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+}
+
+footer img {
+    margin-top: 10px;
+    padding: 5px;
+    border-image: 2px;
+    border-style: solid;
+    border-color: black;
+}
